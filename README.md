@@ -6,7 +6,7 @@ Khuôn viên Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM (cơ sở 
 - làm bài tập C++ và được chấm tự động;
 - đọc đề thi cũ của các khoa và hỏi trợ lý giải đề ngay trong game.
 
-Chơi ngay trên trình duyệt, hoặc cài ứng dụng Android. Repo này chỉ chứa **bản phát hành** để dùng: link chơi, link tải và ghi chú cập nhật. Không có mã nguồn.
+Chơi ngay trên trình duyệt, hoặc cài ứng dụng Android: **Xóm Ú** (nhẹ) hay **Xóm Ú 3D** (đồ hoạ Unreal Engine 5, thử nghiệm). Repo này chỉ chứa **bản phát hành** để dùng: link chơi, link tải và ghi chú cập nhật. Không có mã nguồn.
 
 ## Chơi trên web
 
@@ -28,6 +28,12 @@ Trình duyệt không mở được tên miền có dấu thì dùng https://xn-
 
 ## Ứng dụng Android
 
+Có hai ứng dụng, cài riêng hay cài cả hai đều được:
+- **Xóm Ú** (`XomU.apk`, khoảng 257 MB): nhẹ, chạy trên hầu hết điện thoại.
+- **Xóm Ú 3D** (`XomU3D.apk`, khoảng 2 GB): khuôn viên dựng lại bằng Unreal Engine 5, đẹp hơn nhiều nhưng cần máy mạnh hơn; đang thử nghiệm.
+
+### Xóm Ú
+
 **[Tải XomU.apk](https://github.com/nlhdung/proj-hcmus-verse/releases/latest/download/XomU.apk)** (khoảng 257 MB). Các bản cũ hơn có ở [Releases](https://github.com/nlhdung/proj-hcmus-verse/releases).
 
 - **Máy cần:**
@@ -47,6 +53,29 @@ Trình duyệt không mở được tên miền có dấu thì dùng https://xn-
   - Đồ hoạ nhẹ như bản web trên điện thoại.
   - Có điều khiển cảm ứng; màn hình tự xoay ngang.
   - Video bài giảng: màn chiếu hiện hình của video, nút "Xem trên YouTube" mở video trong ứng dụng YouTube.
+
+### Xóm Ú 3D: bản Unreal Engine (thử nghiệm)
+
+**[Tải XomU3D.apk](https://github.com/nlhdung/proj-hcmus-verse/releases/latest/download/XomU3D.apk)** (khoảng 2 GB, nên tải bằng Wi-Fi).
+
+- **Khác gì ứng dụng Xóm Ú:**
+  - đồ hoạ Unreal Engine 5: cây và cỏ dày, xe chạy trên đường, nhân vật chi tiết hơn;
+  - tháp hoa giữa hồ Túy Xuân với chậu gốm men lam và hoa cúc vạn thọ, trụ đề thi cũ có thân kim loại, mặt kính và dải sáng màu khoa;
+  - ánh sáng ngày và đêm, đèn quanh hồ, cổng trường.
+- **Máy cần:**
+  - Android 8.0 trở lên, chip 64-bit (arm64), điện thoại tầm trung trở lên;
+  - còn trống khoảng 4,5 GB lúc cài; cài xong xoá tệp `XomU3D.apk` đã tải để lấy lại 2 GB.
+- **Cài đặt:**
+  - Làm như ứng dụng Xóm Ú ở trên, với tệp `XomU3D.apk`.
+  - Ứng dụng có tên **Xóm Ú 3D**, cài song song với **Xóm Ú** chứ không thay thế.
+- **Cách chạy:**
+  - Toàn bộ khuôn viên nằm sẵn trong ứng dụng.
+  - Dùng chung tài khoản, tiến độ và khuôn viên với bản web và ứng dụng Xóm Ú: thấy nhau và trò chuyện với nhau.
+  - Điều khiển cảm ứng: cần ảo bên trái để đi, kéo bên phải để xoay camera, cột nút E, Chạy, Nhảy, Kho, Bản đồ, Tài khoản, Chat. Màn hình tự xoay ngang.
+- **Đang thử nghiệm:**
+  - Chưa thử trên nhiều điện thoại.
+  - Máy không mở được hoặc chạy giật thì dùng ứng dụng Xóm Ú hay bản web.
+  - Góp ý cho tác giả (mục GÓP Ý của bản web), ghi kèm tên điện thoại.
 
 ## Bản Windows
 
@@ -80,6 +109,18 @@ Một tệp `XomU.exe`, chạy được trên Windows 10 và 11. Link tải sẽ
 - **Góp ý cho tác giả:** chọn mục GÓP Ý ở màn hình chính hoặc bấm G khi đang chơi; gửi kèm được tối đa 2 hình.
 
 ## Cập nhật
+
+### 19/11/2026: Xóm Ú 3D cho Android (bản Unreal Engine, thử nghiệm)
+
+- **Ứng dụng Xóm Ú 3D** (`XomU3D.apk`):
+  - khuôn viên dựng lại bằng Unreal Engine 5;
+  - cài song song với Xóm Ú, dùng chung tài khoản và tiến độ.
+- **Tháp hoa giữa hồ** trong Xóm Ú 3D: chậu gốm men lam, cúc vạn thọ vàng cam rực rỡ.
+- **Trụ đề thi cũ** trong Xóm Ú 3D: thân kim loại bo tròn, đế đá, mặt kính, dải sáng theo màu khoa.
+- **Nhân vật** (bản web và Xóm Ú 3D):
+  - chọn được cô gái áo nỉ trắng, quần jean (trước đứng cùng bạn nam ở trạm xe buýt); đây là nhân vật nữ mặc định;
+  - ba bạn ngồi ghế đá mặc váy dài chấm cỏ.
+- Ứng dụng Xóm Ú (`XomU.apk`) giữ nguyên bản 17/11.
 
 ### 17/11/2026: ứng dụng Android, đề thi cũ, trợ lý giải đề, đèn đêm
 
@@ -134,5 +175,7 @@ Một tệp `XomU.exe`, chạy được trên Windows 10 và 11. Link tải sẽ
 
 - Godot Engine (MIT), cùng các thư viện Android đi kèm bản Android của Godot (Apache 2.0)
 - Godot WRY (MIT), chỉ trong bản Windows
+- Unreal® Engine, chỉ trong Xóm Ú 3D. Xóm Ú 3D uses the Unreal® Engine. Unreal® is a trademark or registered trademark of Epic Games, Inc. in the United States of America and elsewhere. Unreal® Engine, Copyright 1998–2026, Epic Games, Inc. All rights reserved.
+- MetaHuman (giấy phép MetaHuman của Epic Games) và phông Roboto (Apache 2.0), chỉ trong Xóm Ú 3D
 - Phông Be Vietnam Pro và JetBrains Mono (SIL Open Font License), DejaVu Sans (giấy phép Bitstream Vera / DejaVu)
 - Video bài giảng thuộc kênh YouTube của giảng viên
