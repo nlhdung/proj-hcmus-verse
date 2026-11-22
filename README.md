@@ -3,7 +3,9 @@
 Khuôn viên Trường Đại học Khoa học Tự nhiên, ĐHQG-HCM (cơ sở Linh Trung) dựng thành thế giới 3D để học lập trình. Sinh viên có thể:
 - đi dạo quanh trường, gặp và trò chuyện với các bạn đang chơi cùng lúc;
 - vào phòng học, bật màn chiếu xem video bài giảng;
-- làm bài tập C++ và được chấm tự động;
+- học C++ theo khoá học 11 chương: mỗi người một đề riêng ở các bảng bài, code được chấm tự động;
+- nhặt vật phẩm năng lượng quanh trường, trả lời câu hỏi ôn tập theo chương và theo ngành của khoa;
+- làm nhiệm vụ hằng ngày, hằng tuần, nhận điểm, kinh nghiệm, thành tựu;
 - đọc đề thi cũ của các khoa và hỏi trợ lý giải đề ngay trong game.
 
 Chơi ngay trên trình duyệt, hoặc cài ứng dụng Android: **Xóm Ú** (nhẹ) hay **Xóm Ú 3D** (đồ hoạ Unreal Engine 5, thử nghiệm). Repo này chỉ chứa **bản phát hành** để dùng: link chơi, link tải và ghi chú cập nhật. Không có mã nguồn.
@@ -29,12 +31,12 @@ Trình duyệt không mở được tên miền có dấu thì dùng https://xn-
 ## Ứng dụng Android
 
 Có hai ứng dụng, cài riêng hay cài cả hai đều được:
-- **Xóm Ú** (`XomU.apk`, khoảng 257 MB): nhẹ, chạy trên hầu hết điện thoại.
+- **Xóm Ú** (`XomU.apk`, khoảng 259 MB): nhẹ, chạy trên hầu hết điện thoại.
 - **Xóm Ú 3D** (`XomU3D.apk`, khoảng 2 GB): khuôn viên dựng lại bằng Unreal Engine 5, đẹp hơn nhiều nhưng cần máy mạnh hơn; đang thử nghiệm.
 
 ### Xóm Ú
 
-**[Tải XomU.apk](https://github.com/nlhdung/proj-hcmus-verse/releases/latest/download/XomU.apk)** (khoảng 257 MB). Các bản cũ hơn có ở [Releases](https://github.com/nlhdung/proj-hcmus-verse/releases).
+**[Tải XomU.apk](https://github.com/nlhdung/proj-hcmus-verse/releases/latest/download/XomU.apk)** (khoảng 259 MB). Các bản cũ hơn có ở [Releases](https://github.com/nlhdung/proj-hcmus-verse/releases).
 
 - **Máy cần:**
   - Android 7.0 trở lên, chip 64-bit (arm64), tức hầu hết điện thoại từ khoảng năm 2017;
@@ -71,7 +73,8 @@ Có hai ứng dụng, cài riêng hay cài cả hai đều được:
 - **Cách chạy:**
   - Toàn bộ khuôn viên nằm sẵn trong ứng dụng.
   - Dùng chung tài khoản, tiến độ và khuôn viên với bản web và ứng dụng Xóm Ú: thấy nhau và trò chuyện với nhau.
-  - Điều khiển cảm ứng: cần ảo bên trái để đi, kéo bên phải để xoay camera, cột nút E, Chạy, Nhảy, Kho, Bản đồ, Tài khoản, Chat. Màn hình tự xoay ngang.
+  - Điều khiển cảm ứng: cần ảo bên trái để đi, kéo bên phải để xoay camera, cột nút E, Chạy, Nhảy, Kho, Bản đồ, Nhiệm vụ, Bảng vàng, Tài khoản, Chat. Màn hình tự xoay ngang.
+  - Có đủ năng lượng làm bài, câu hỏi ôn tập, nhiệm vụ và Bảng vàng như ứng dụng Xóm Ú.
 - **Đang thử nghiệm:**
   - Chưa thử trên nhiều điện thoại.
   - Máy không mở được hoặc chạy giật thì dùng ứng dụng Xóm Ú hay bản web.
@@ -87,13 +90,28 @@ Một tệp `XomU.exe`, chạy được trên Windows 10 và 11. Link tải sẽ
   - WASD: đi; chuột: xoay camera; R: chạy;
   - E: mở bài tập, bật công tắc màn chiếu, mở bảng đề thi cũ;
   - Enter: trò chuyện (Tab đổi giữa Gần và Toàn trường);
-  - I: kho đồ; M: bản đồ; T: tài khoản;
+  - I: kho đồ; M: bản đồ; J: nhiệm vụ; B: Bảng vàng; N: nhận xét của giáo viên; T: tài khoản;
   - G: góp ý; Esc: đóng.
-- **Điện thoại:** kéo vòng tròn bên trái để đi, vuốt phần còn lại của màn hình để xoay camera. Các nút: E, Chạy, Kho, Bản đồ, Tài khoản, Chat, Góp ý.
+- **Điện thoại:** kéo vòng tròn bên trái để đi, vuốt phần còn lại của màn hình để xoay camera. Các nút: E, Chạy, Kho, Bản đồ, Nhiệm vụ, Tài khoản, Nhận xét, Chat, Góp ý (Bảng vàng mở từ cửa sổ Nhiệm vụ).
 - **Tài khoản:**
   - Đăng nhập bằng MSSV, tên tài khoản hoặc email, hoặc tạo tài khoản mới (mã xác nhận gửi về email).
+  - Ô mật khẩu có nút **Hiện/Ẩn** để xem lại mật khẩu đang gõ.
+  - Quên mật khẩu: lấy lại bằng mã gửi về email, hoặc nhờ giáo viên đặt lại (giáo viên có thể gửi mật khẩu mới tới email bạn muốn).
   - Chọn **Khám phá tự do** để dạo trường không cần tài khoản.
   - Mỗi tài khoản chỉ chơi trên một thiết bị: đăng nhập ở máy khác thì máy trước tự thoát.
+  - Trong Tài khoản (T): ghi **mã lớp** giáo viên cho (nếu chưa có trong danh sách lớp), chọn **khoa** của bạn.
+- **Khoá học:**
+  - 11 chương, từ Nhập xuất tới Danh sách liên kết, 85 bài; xong đủ bài của một chương thì mở chương sau.
+  - Mỗi chương là một kho bài: bạn được bốc một đề riêng ở bảng của chương, bạn đứng cạnh làm đề khác.
+  - Cửa sổ bài có đề, video bài giảng của chương, gợi ý, lịch sử các lần nộp và nhận xét của giáo viên.
+  - Khung code **chỉ nhận gõ tay**: không sao chép, cắt hay dán.
+- **Năng lượng làm bài:**
+  - Mỗi bài lấy 10 năng lượng ở lần nộp đầu; các lần nộp sau không tốn. Tài khoản mới có 30.
+  - Thiếu năng lượng thì đi tìm **vật phẩm năng lượng** quanh trường: quả táo, bánh mì, chai nước suối, hộp cơm (vật lớn hay nằm xa bảng bài).
+  - Nhặt một vật thì trả lời 3 câu hỏi ôn tập của chương đang học (có khoa thì có câu theo ngành của khoa): đúng bao nhiêu phần, nhận bấy nhiêu phần năng lượng.
+  - Vật phẩm ở đâu thì mọi người đều thấy như nhau; bạn lấy rồi thì chỉ mất với bạn. Mỗi khu đổi chỗ vật phẩm 5 phút một lần.
+- **Nhiệm vụ (J):** ba nhiệm vụ mỗi ngày và hai nhiệm vụ mỗi tuần, của riêng bạn (nhặt vật ở một khu, trả lời đúng N câu, ghé một nơi, qua một bài code...). Xong là nhận thưởng; mỗi ngày đổi được một nhiệm vụ.
+- **Bảng vàng (B):** thông báo chung, và phản hồi của tác giả cho góp ý của bạn. Có thông báo mới thì Bảng vàng tự mở khi bạn vào game.
 - **Nhân vật và tên:**
   - Lần đầu vào, chọn nhân vật; đổi lại được trong Tài khoản (T).
   - Tên hiện trên đầu nhân vật là **tên hiển thị**: mặc định là một từ tiếng Anh ngẫu nhiên, đổi được trong Tài khoản (T). Họ tên thật không hiện cho người khác.
@@ -109,6 +127,29 @@ Một tệp `XomU.exe`, chạy được trên Windows 10 và 11. Link tải sẽ
 - **Góp ý cho tác giả:** chọn mục GÓP Ý ở màn hình chính hoặc bấm G khi đang chơi; gửi kèm được tối đa 2 hình.
 
 ## Cập nhật
+
+### 22/11/2026: khoá học đầy đủ, năng lượng làm bài, nhiệm vụ, Bảng vàng
+
+- **Khoá học 11 chương, 85 bài:**
+  - thêm các chương Rẽ nhánh, Tập tin văn bản, Danh sách liên kết;
+  - mỗi chương là một kho bài, mỗi người một đề riêng;
+  - video bài giảng cho mọi chương, chương chưa có video thì có bài tóm tắt.
+- **Năng lượng làm bài:**
+  - mỗi bài lấy 10 năng lượng ở lần nộp đầu;
+  - nạp năng lượng bằng cách nhặt quả táo, bánh mì, chai nước suối, hộp cơm quanh trường và trả lời 3 câu hỏi ôn tập.
+- **2750 câu hỏi ôn tập**, 250 câu mỗi chương. Có câu chung và câu đặt trong ngành của từng khoa; chương đã xong thì không hỏi nữa.
+- **Vật phẩm theo khu:** khuôn viên chia 22 khu. Mọi người thấy cùng vật phẩm; mỗi khu đổi chỗ vật phẩm 5 phút một lần.
+- **Nhiệm vụ hằng ngày, hằng tuần** (phím J), mỗi người một bộ riêng, có thưởng thêm khi xong cả.
+- **Bảng vàng** (phím B): thông báo, và phản hồi cho góp ý bạn đã gửi.
+- **Nhận xét của giáo viên** trên bài nộp: đọc ở phím N và ở đầu đề bài, có báo khi có nhận xét mới.
+- **Lớp và khoa:** ghi mã lớp giáo viên cho trong Tài khoản (mã sai sẽ được báo), chọn khoa để có câu hỏi theo ngành.
+- **Khung code chỉ nhận gõ tay**, không sao chép hay dán.
+- **Ô mật khẩu có nút Hiện/Ẩn.** Quên mật khẩu có thể nhờ giáo viên đặt lại, mật khẩu mới gửi tới email bạn muốn.
+- **Xóm Ú 3D:**
+  - có đủ năng lượng, câu hỏi ôn tập, nhiệm vụ, Bảng vàng như Xóm Ú;
+  - vật phẩm không còn bị chìm dưới đất ở chỗ đất cao gần cổng;
+  - nhặt vật phẩm thường đã nhận đúng vào kho.
+- Bản web đã có các thay đổi này. Ứng dụng Android cài bản mới (`XomU.apk`, `XomU3D.apk`) để có đủ.
 
 ### 19/11/2026: Xóm Ú 3D cho Android (bản Unreal Engine, thử nghiệm)
 
